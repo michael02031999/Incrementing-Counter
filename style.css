@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600;700&family=Roboto+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(142, 67, 173);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Roboto Mono", monospace;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  grid-column-gap: 90px;
+
+  width: 750px;
+}
+
+#twitter,
+#youtube,
+#facebook {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#twitterIcon,
+#youtubeIcon,
+#facebookIcon {
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+}
+
+#numFollowers1,
+#numFollowers2,
+#numFollowers3 {
+  font-weight: 400;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+}
+
+#description1,
+#description2,
+#description3 {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#description2 {
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 581px) {
+  #container {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 60px;
+  }
+}
